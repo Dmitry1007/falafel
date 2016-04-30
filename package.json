@@ -10,5 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "^1.13.0"
+  },
+
+  "scripts": {
+    "build": "webpack"
   }
 }
