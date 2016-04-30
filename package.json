@@ -1,0 +1,14 @@
+{
+  "name": "react-skill-track",
+  "version": "1.0.0",
+  "description": "track code skills over time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitry Vizersky",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.0"
+  }
+}
