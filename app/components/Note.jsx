@@ -46,10 +46,6 @@ export default class Note extends React.Component {
   };
 
   finishEdit = (e) => {
-    // `Note` will trigger an optional `onEdit` callback once it
-    // has a new value. We will use this to communicate the change to
-    // `App`.
-
     const value = e.target.value;
 
     if(this.props.onEdit) {
