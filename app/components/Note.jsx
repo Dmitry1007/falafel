@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default () => <h1>Base React Template!</h1>;
+export default ({task}) => <div>{task}</div>;
+// OR
+// export default (props) => <div>{props.task}</div>;
