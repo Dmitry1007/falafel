@@ -24,13 +24,6 @@ class NoteStore {
   update(updatedNote) {
     const notes = this.notes.map(note => {
       if(note.id === updatedNote.id) {
-        // Object.assign is used to patch the note data here. It
-        // mutates target (first parameter). In order to avoid that,
-        // I use {} as its target and apply data on it.
-        //
-        // Example: {}, {a: 5, b: 3}, {a: 17} -> {a: 17, b: 3}
-        //
-        // You can pass as many objects to the method as you want.
         return Object.assign({}, note, updatedNote);
       }
       return note;
