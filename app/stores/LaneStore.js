@@ -9,8 +9,8 @@ class LaneStore {
   }
   create(lane) {
     const lanes = this.lanes;
-    lane.id = uuid.v4();
-    lane.notes = lane.notes || [];
+    lane.id     = uuid.v4();
+    lane.notes  = lane.notes || [];
     this.setState({
       lanes: lanes.concat(lane)
     });
