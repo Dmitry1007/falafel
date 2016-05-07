@@ -5,18 +5,16 @@ import NoteActions from '../actions/NoteActions';
 class NoteStore {
   constructor() {
     this.bindActions(NoteActions);
-
     this.notes = [];
   }
 
   create(note) {
     const notes = this.notes;
-
     note.id = uuid.v4();
-
     this.setState({
       notes: notes.concat(note)
     });
+    return note;
   }
 
   update(updatedNote) {
