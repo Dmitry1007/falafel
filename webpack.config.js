@@ -1,11 +1,11 @@
-const path = require('path');
+const path    = require('path');
 const webpack = require('webpack');
-const merge  = require('webpack-merge');
+const merge   = require('webpack-merge');
 const NpmInstallPlugin = require('npm-install-webpack-plugin');
 
-const TARGET = process.env.npm_lifecycle_event;
+const TARGET  = process.env.npm_lifecycle_event;
 
-const PATHS  = {
+const PATHS   = {
   app: path.join(__dirname, 'app'),
   build: path.join(__dirname, 'build')
 };
