@@ -81,6 +81,9 @@ export default class Lane extends React.Component {
 
   deleteLane = () => {
     const laneId = this.props.lane.id;
+    this.props.lane.notes.map(noteId => {
+      NoteActions.delete(noteId)
+    });
     LaneActions.delete(laneId);
   };
 
