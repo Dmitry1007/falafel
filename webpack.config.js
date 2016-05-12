@@ -32,6 +32,13 @@ const common = {
     filename: '[name].js'
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['eslint'],
+        include: PATHS.app
+      }
+    ],
     loaders: [
       // Set up jsx. This accepts js too thanks to RegExp
       {
